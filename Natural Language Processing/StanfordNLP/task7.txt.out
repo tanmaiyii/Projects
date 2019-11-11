@@ -1,0 +1,52 @@
+Document: ID=task7.txt (2 sentences, 14 tokens)
+
+Sentence #1 (8 tokens):
+Queen Mary University is located in London.
+
+Tokens:
+[Text=Queen CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Queen NamedEntityTag=ORGANIZATION]
+[Text=Mary CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Mary NamedEntityTag=ORGANIZATION]
+[Text=University CharacterOffsetBegin=11 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=University NamedEntityTag=ORGANIZATION]
+[Text=is CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=located CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=JJ Lemma=located NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=London CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=London NamedEntityTag=CITY]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, located-5)
+compound(University-3, Queen-1)
+compound(University-3, Mary-2)
+nsubjpass(located-5, University-3)
+auxpass(located-5, is-4)
+case(London-7, in-6)
+nmod:in(located-5, London-7)
+punct(located-5, .-8)
+
+Extracted the following NER entity mentions:
+Queen Mary University	ORGANIZATION
+London	CITY
+
+Sentence #2 (6 tokens):
+It is a great university.
+
+Tokens:
+[Text=It CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=university CharacterOffsetBegin=58 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=university NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, university-5)
+nsubj(university-5, It-1)
+cop(university-5, is-2)
+det(university-5, a-3)
+amod(university-5, great-4)
+punct(university-5, .-6)
+
+Extracted the following NER entity mentions:
+
+Coreference set:
+	(2,1,[1,2]) -> (1,3,[1,4]), that is: "It" -> "Queen Mary University"

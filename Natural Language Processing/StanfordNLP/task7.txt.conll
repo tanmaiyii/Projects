@@ -1,0 +1,16 @@
+1	Queen	Queen	NNP	ORGANIZATION	3	compound
+2	Mary	Mary	NNP	ORGANIZATION	3	compound
+3	University	University	NNP	ORGANIZATION	5	nsubj
+4	is	be	VBZ	O	5	cop
+5	located	located	JJ	O	0	ROOT
+6	in	in	IN	O	7	case
+7	London	London	NNP	CITY	5	nmod
+8	.	.	.	O	5	punct
+
+1	It	it	PRP	O	5	nsubj
+2	is	be	VBZ	O	5	cop
+3	a	a	DT	O	5	det
+4	great	great	JJ	O	5	amod
+5	university	university	NN	O	0	ROOT
+6	.	.	.	O	5	punct
+
