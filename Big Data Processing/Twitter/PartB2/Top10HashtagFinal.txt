@@ -1,0 +1,11 @@
+#rio2016	1449246
+#olympics	91756
+#gold	68144
+#bra	50263
+#futebol	49365
+#usa	42754
+#oro	40899
+#swimming	36649
+#cerimoniadeabertura	36499
+#openingceremony	35974
+

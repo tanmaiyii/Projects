@@ -1,0 +1,30 @@
+import java.io.IOException;
+import java.util.Iterator;
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Reducer;
+
+
+public class TweetLengthReducer extends Reducer<IntWritable, IntWritable, IntWritable, IntWritable> {
+
+    private IntWritable result = new IntWritable();
+
+    public void reduce(IntWritable key, Iterable<IntWritable> values, Context context)
+
+              throws IOException, InterruptedException {
+
+        int sum = 0;
+
+        for (IntWritable value : values) {
+
+            //the mapper values are aggregated here
+    sum += value.get();
+        }
+
+               result.set(sum);
+
+        context.write(key, result);
+
+    }
+
+}
